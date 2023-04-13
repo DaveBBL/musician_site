@@ -1,5 +1,5 @@
 import Title from "../components/Title";
-import { Card, CardTitle, CardText, CardImg, CardImgOverlay, CardGroup } from "reactstrap";
+import { Card, CardTitle, CardText, CardImg, CardGroup } from "reactstrap";
 import outdoorphoto from "../app/assets/img/radu-florin-XmyHJfZ-qDc-unsplash.jpg";
 
 const Biography = () => {
