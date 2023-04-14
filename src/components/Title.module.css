@@ -1,8 +1,12 @@
 .title {
   color: darkslategray;
   text-align: center;
-  font-family: "Abel";
-  font-size: larger;
-  font-weight: bolder;
   margin: 20px 5px;
+  background-color: burlywood;
+}
+
+h1 {
+  font-family: "Abel";
+  font-size: xxx-large;
+  font-weight: 900;
 }

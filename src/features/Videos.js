@@ -8,12 +8,12 @@ const Videos = () => {
       <Container>
         <Row>
           <Col xs="12">
-            <div class="embed-responsive embed-responsive-16by9">
+            <div className="ratio ratio-16x9">
               <iframe
                 title="Testing"
                 class="embed-responsive-item"
                 src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </Col>

@@ -48,6 +48,7 @@ const Contact = () => {
             </a>
           </Col>
         </Row>
+        <p className="text-center">This demo site is completely fictional.</p>
       </Container>
     </footer>
   );

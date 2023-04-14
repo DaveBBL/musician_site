@@ -1,0 +1,14 @@
+.card {
+  background-color: rgb(204, 192, 143);
+}
+
+.cardLink {
+  text-decoration: none;
+  color: darkgoldenrod;
+  background-color: ;
+
+}
+
+.cardLink:hover {
+  color: burlywood;
+}

@@ -1,7 +1,7 @@
 import NavSocial from "./components/NavSocial";
 import Publicity from "./features/Publicity";
 import Videos from "./features/Videos";
-import Follow from "./features/Follow";
+import Music from "./features/Music";
 import TourDates from "./features/TourDates";
 import Biography from "./features/Biography";
 import Contact from "./components/Contact";
@@ -13,7 +13,7 @@ function App() {
       <NavSocial />
       <Publicity />
       <Videos />
-      <Follow />
+      <Music />
       <TourDates />
       <Biography />
       <Contact />
