@@ -4,10 +4,10 @@ import { EVENTS } from "../data/events";
 
 const TourDates = () => {
   return (
-    <div>
+    <>
       <Title title="TOUR DATES" />
       <GigList events={EVENTS} />
-    </div>
+    </>
   );
 };
 

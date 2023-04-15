@@ -2,13 +2,10 @@ body {
   background-color: #e5e5e5;
 }
 
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
 .component {
+  font-family: "Abel", sans-serif;
   background-color: white;
+  text-align: center;
   width: 25%;
   max-width: 600px;
   margin: 1em auto;
@@ -17,8 +14,13 @@ body {
   border-radius: 10px;
 }
 
+.center {
+  text-align: center;
+}
+
 .musicCover {
   border-radius: 10%;
+  align-items: center;
 }
 
 .playButton {

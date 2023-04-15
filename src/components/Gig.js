@@ -31,9 +31,7 @@ const Gig = (props) => {
               target="_blank"
             >
               {props.gig.venue}
-            </CardLink>
-          </ListGroupItem>
-          <ListGroupItem>
+            </CardLink>{" :"}
             <CardLink
               className={styles.cardLink}
               href={mapsAddress}

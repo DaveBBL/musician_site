@@ -4,14 +4,19 @@ import song2039 from "../app/assets/DKeH_2039.mp3"; // importing the music
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
 import { IconContext } from "react-icons"; // for customazing the icons
+import { Card, CardTitle } from 'reactstrap'
 import styles from "./Player.module.css";
+
+// Thanks to Suraj Vishwakarma: https://dev.to/documatic/building-a-music-player-in-react-2aa4
+// I tweeked the first useEffect to replace [isPlaying] with [duration] as the dependency, as
+// elint demanded. Also reformatted to use reactstrap's Card components.
 
 const Player = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [time, setTime] = useState({
     min: "",
     sec: "",
-  })
+  });
   const [currTime, setCurrTime] = useState({
     min: "",
     sed: "",
@@ -20,7 +25,7 @@ const Player = () => {
   const [seconds, setSeconds] = useState();
 
   const [play, { pause, duration, sound }] = useSound(song2039);
-  
+
   useEffect(() => {
     if (duration) {
       const sec = duration / 1000;
@@ -30,7 +35,7 @@ const Player = () => {
         min: min,
         sec: secRemain,
       });
-    };
+    }
   }, [duration]);
 
   useEffect(() => {
@@ -59,22 +64,23 @@ const Player = () => {
   };
 
   return (
-    <div className={styles.component}>
-      <h2>Playing Now</h2>
-      <img
-        className={styles.musicCover}
-        src="https://picsum.photos/200/200"
-        alt="random"
-      />
+    <Card className={styles.center}>
+      <CardTitle>Frank Tuttle</CardTitle>
       <div>
-        <h3 className={styles.title}>Frank Tuttle</h3>
-        <p className={styles.subTitle}>30 Years Later</p>
+        <img
+          className={styles.musicCover}
+          src="https://picsum.photos/200/200"
+          alt="random"
+          height="200px"
+          width="200px"
+        />
       </div>
+      <CardTitle>30 Years Later</CardTitle>
       <div>
         <div className="time">
-          <p>
+          {/* <p>
             {currTime.min}:{currTime.sec}
-          </p>
+          </p> */}
           <p>
             {time.min}:{time.sec}
           </p>
@@ -116,7 +122,7 @@ const Player = () => {
           </IconContext.Provider>
         </button>
       </div>
-    </div>
+    </Card>
   );
 };
 
